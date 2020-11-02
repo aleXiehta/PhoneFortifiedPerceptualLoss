@@ -48,3 +48,9 @@ To generate the enhanced sound files, please run:
 ```
 python generate.py <path/to/your/checkpoint/ckpt> <path/to/output/dir>
 ```
+
+## License
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details
+
+## Acknowledgments
+* [Bio-ASP Lab](https://bio-asplab.citi.sinica.edu.tw), CITI, Academia Sinica, Taipei, Taiwan
