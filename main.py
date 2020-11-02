@@ -24,6 +24,7 @@ from dataset import VoiceBankDemandDataset # please make your own "dataset.py" i
 from models import DeepConvolutionalUNet
 from perceptual.losses import PerceptualLoss
 from optimizers import RAdam
+from utils import rnn_collate
 
 
 def fix_seed(seed):
