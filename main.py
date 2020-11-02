@@ -177,9 +177,9 @@ if __name__ == '__main__':
         writer.add_graph(net, dummy)
 
     # define loss
-    cx_loss = PerceptualLoss(model_type=args.model_type)
-    cx_loss = cx_loss.to(device)
-    criterion = lambda y_hat, y: cx_loss(y_hat, y) + F.l1_loss(y_hat, y)
+    per_loss = PerceptualLoss(model_type=args.model_type)
+    per_loss = per_loss.to(device)
+    criterion = lambda y_hat, y: per_loss(y_hat, y) + F.l1_loss(y_hat, y)
 
     # iteration start
     for epoch in range(start_epoch, start_epoch + args.num_epochs, 1):
