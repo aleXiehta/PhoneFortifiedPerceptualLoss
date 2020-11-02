@@ -17,7 +17,7 @@ The *wav2vec* pre-trained model can be found in the official [repo]("https://git
 ##### Voice Bank--Demand Dataset
 The Voice Bank--Demand Dataset is not provided by this repository. Please download the dataset and build your own PyTorch dataloader from [here]("https://datashare.is.ed.ac.uk/handle/10283/1942?show=full").
 For each `.wav` file, you need to first convert it into 16kHz format by any audio converter (e.g., [sox]("http://sox.sourceforge.net/")).
-```console
+```
 sox <48K.wav> -r 16000 -c 1 -b 16 <16k.wav>
 ```
 
@@ -25,7 +25,7 @@ sox <48K.wav> -r 16000 -c 1 -b 16 <16k.wav>
 ##### Training
 To train the model, please run the following script.
 The full training process apporximately consumes 19GB of GPU vram. Reduce the batch size if needed.
-```console
+```
 python main.py \
     --exp_dir <root/dir/of/experiment> \
     --exp_name <name_of_the_experiment> \
@@ -45,6 +45,6 @@ python main.py \
 ```
 ##### Testing
 To generate the enhanced sound files, please run:
-```console
+```
 python generate.py <path/to/your/checkpoint/ckpt> <path/to/output/dir>
 ```
