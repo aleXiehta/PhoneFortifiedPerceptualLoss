@@ -11,12 +11,12 @@ This is the official implementation of our paper *"Improving Perceptual Quality 
 
 ### Data preparation
 ##### Enhancement model parameters and the *wav2vec* pre-trained model
-Please download the model weights from [here]("https://drive.google.com/file/d/1QP2bcmnn1yHybsmUbCj9f0xjUyRvrqJa/view?usp=sharing"), and put the weight file into the `checkpoint` folder.
-The *wav2vec* pre-trained model can be found in the official [repo]("https://github.com/pytorch/fairseq/blob/master/examples/wav2vec/README.md#pre-trained-models-1").
+Please download the model weights from [here](https://drive.google.com/file/d/1QP2bcmnn1yHybsmUbCj9f0xjUyRvrqJa/view?usp=sharing), and put the weight file into the `checkpoint` folder.
+The *wav2vec* pre-trained model can be found in the official [repo](https://github.com/pytorch/fairseq/blob/master/examples/wav2vec/README.md#pre-trained-models-1).
 
 ##### Voice Bank--Demand Dataset
-The Voice Bank--Demand Dataset is not provided by this repository. Please download the dataset and build your own PyTorch dataloader from [here]("https://datashare.is.ed.ac.uk/handle/10283/1942?show=full").
-For each `.wav` file, you need to first convert it into 16kHz format by any audio converter (e.g., [sox]("http://sox.sourceforge.net/")).
+The Voice Bank--Demand Dataset is not provided by this repository. Please download the dataset and build your own PyTorch dataloader from [here](https://datashare.is.ed.ac.uk/handle/10283/1942?show=full).
+For each `.wav` file, you need to first convert it into 16kHz format by any audio converter (e.g., [sox](http://sox.sourceforge.net/)).
 ```
 sox <48K.wav> -r 16000 -c 1 -b 16 <16k.wav>
 ```
