@@ -1,5 +1,5 @@
 # Phone Fortified Perceptual Loss for Speech Enhancement
-This is the official implementation of our paper *"Improving Perceptual Quality by Phone-Fortified Perceptual Loss for Speech" Enhancement"*
+This is the official implementation of our paper *"Improving Perceptual Quality by Phone-Fortified Perceptual Loss using Wasserstein Distance for Speech" Enhancement"*
 
 ## Requirements
 - pytorch 1.6
@@ -8,10 +8,11 @@ This is the official implementation of our paper *"Improving Perceptual Quality 
 - pesq 0.0.1
 - colorama 0.4.3
 - fairseq 0.9.0
+- geomloss 0.2.3
 
 ## Data preparation
 #### Enhancement model parameters and the *wav2vec* pre-trained model
-Please download the model weights from [here](https://drive.google.com/drive/folders/1cwDoGdF44ExQt__B6Z44g3opUdH-hJXE?usp=sharing), and put the weight file into the `checkpoint` folder.
+Please download the model weights from [here](https://drive.google.com/drive/folders/1cwDoGdF44ExQt__B6Z44g3opUdH-hJXE?usp=sharing), and put the weight file into the `PFPL-W` and `PFPL` folder, respectively.
 The *wav2vec* pre-trained model can be found in the official [repo](https://github.com/pytorch/fairseq/blob/master/examples/wav2vec/README.md#pre-trained-models-1).
 
 #### Voice Bank--Demand Dataset
@@ -46,7 +47,7 @@ python main.py \
 #### Testing
 To generate the enhanced sound files, please run:
 ```
-python generate.py <path/to/your/checkpoint/ckpt> <path/to/output/dir>
+python generate.py <path/to/PFPL_or_PFPL-W> <path/to/output/dir>
 ```
 
 ## License
