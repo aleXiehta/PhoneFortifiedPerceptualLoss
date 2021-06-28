@@ -11,7 +11,7 @@ This is the official implementation of our paper *"Improving Perceptual Quality 
 
 ## Data preparation
 #### Enhancement model parameters and the *wav2vec* pre-trained model
-Please download the model weights from [here](https://drive.google.com/file/d/1QP2bcmnn1yHybsmUbCj9f0xjUyRvrqJa/view?usp=sharing), and put the weight file into the `checkpoint` folder.
+Please download the model weights from [here](https://drive.google.com/drive/folders/1cwDoGdF44ExQt__B6Z44g3opUdH-hJXE?usp=sharing), and put the weight file into the `checkpoint` folder.
 The *wav2vec* pre-trained model can be found in the official [repo](https://github.com/pytorch/fairseq/blob/master/examples/wav2vec/README.md#pre-trained-models-1).
 
 #### Voice Bank--Demand Dataset
